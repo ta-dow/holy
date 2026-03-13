@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #fcfcfc;
+    margin: 0;
+}
+
+/* Glass effect from https://css.glass */
+nav {
+    text-transform: uppercase;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 1em 2em;
+    width: 100%;
+    letter-spacing: 0.1em;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 3em 0;
+}
+
+main {
+    margin: 0 auto;
+    padding: 5em 0;
+    max-width: 70em;
+}
+
+nav a {
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.logo a {
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+    text-transform: none;
+    color: #940101;
+}
+
+.pages a {
+    color: #000;
+    font-weight: 300;
+}
+
+.pages a:hover {
+    color: #656565;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    color: #fff;
+    font-size: 4em;
+    letter-spacing: 0.02em;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-weight: 200;
+    color: #fff;
+}
+
+.hero img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 98vw;
+    filter: grayscale(100%) brightness(60%);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.arrow {
+    border: solid #f7f7f7;
+    display: inline-block;
+    border-width: 0 3px 3px 0;
+    padding: 10px;
+    transform: rotate(45deg);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
