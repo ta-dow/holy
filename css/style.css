@@ -466,4 +466,11 @@ a:focus {
     .card {
         gap: 2em;
     }
+    .overlay-box h4 {
+        max-width: 30ch;
+    }
+    .gems img {
+        width: 20em;
+        height: 20em;
+    }
 }
