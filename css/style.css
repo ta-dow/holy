@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #000;
+    --secondary: #fff;
+    --tertiary: #940101;
+    --font-primary: "Playfair Display", serif;
+    --font-secondary: "Roboto", sans-serif;
+    --content-width: 64em;
+    --spacing-sm: 0.5em;
+    --spacing-md: 1em;
+    --spacing-lg: 2em;
+    --radius-sm: 0.25em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 10em 0;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background: #fcfcfc;
+    margin: 0;
+}
+
+main section {
+    margin: 8em 0 0;
+}
+
+article,
+section p {
+    max-inline-size: var(--content-width);
+    margin: 0 auto;
+    padding-inline: clamp(1rem, 5vw, 3rem);
+}
+
+article img {
+    max-width: 100%;
+}
+
+footer {
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: clamp(1rem, 5vw, 3rem);
+}
+
+h1 {
+    font-size: clamp(2.3rem, 7vw, 3.7rem);
+    letter-spacing: 0.02em;
+    font-family: var(--font-primary);
+    padding: var(--spacing-sm);
+    margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(0.875rem, 3vw, 1.5rem);
+    margin-top: var( --spacing-sm);
+    letter-spacing: 0.02em;
+    font-weight: 200;
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 2em 0 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: 200;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60ch;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-weight: 400;
+    margin: var(--spacing-sm);
+    text-transform: capitalize;
+}
+
+h6 {
+    font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+    font-weight: 300;
+    margin: var(--spacing-sm);
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+footer p {
+    font-size: clamp(0.65rem, 1.5vw, 0.75rem);
+}
+
+article h3 {
+    text-align: left;
+}
+
+hr {
+    border: 15px solid #940101;
+}
+
+/* Glass effect by css.glass */
+nav {
+    text-transform: uppercase;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding: var(--spacing-md);
+    width: 100%;
+    letter-spacing: 0.1em;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+}
+
+nav a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.pages a {
+    font-weight: 300;
+}
+
+.pages a:hover {
+    color: #656565;
+}
+
+.pages a.active {
+    font-weight: 500;
+}
+
+article a {
+    text-decoration: none;
+    color: var(--primary);
+    border-bottom: 1px solid var(--tertiary);
+    transition: transform 0.3s ease;
+}
+
+article a:hover {
+    border-bottom: 2px solid var(--tertiary);
+}
+
+a:focus {
+    outline: 1px solid var(--tertiary);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.hero {
+    background: url(../images/hero_pothole.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    place-items: center;
+    display: grid;
+}
+
+.hero h1,
+.hero h2 {
+    color: var(--secondary);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.arrow {
+    border: solid #f7f7f7;
+    display: inline-block;
+    border-width: 0 3px 3px 0;
+    padding: 10px;
+    transform: rotate(45deg);
+}
+
+/* Hamburger to X navbar effect by Quackit */
+.hamburger-btn {
+    width: 40px;
+    height: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-btn.open .hamburger-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-btn.open .hamburger-line:nth-child(2) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4em auto;
+}
+
+.card img {
+    object-fit: cover;
+    width: clamp(150px, 20vw, 300px);
+    height: 50vh;
+    padding: 0.25em;
+    filter: grayscale(1);
+}
+
+.half-hero {
+    position: relative;
+    margin: 10rem 0;
+}
+
+.half-hero img {
+    object-fit: cover;
+    width: 100vw;
+    height: 70vh;
+}
+
+.overlay-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    border-radius: var(--radius-sm);
+}
+
+.overlay-box h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+}
+
+.overlay-box h4 {
+    max-width: 48ch;
+}
+
+.overlay-box a {
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 2em;
+    border-radius: 0.25em;
+    border: #000 1px solid;
+    color: #000;
+    text-decoration: none;
+}
+
+.overlay-box a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.gems {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: var(--spacing-inline);
+}
+
+.gem-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 0 1 clamp(150px, 25%, 250px);
+}
+
+.gem-card {
+    position: relative;
+    background: #E5E5E5;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+}
+
+.gem-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.gems img {
+    width: 14em;
+    height: 14em;
+    object-fit: contain;
+    display: block;
+    filter: grayscale(1);
+    transition: opacity 0.3s ease;
+}
+
+.gem-card:hover .gem-text {
+    opacity: 1;
+}
+
+.gem-card:hover img {
+    opacity: 0.1;
+}
+
+.circle-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.circle-filled {
+    background: var(--bg-color);
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.c1 { --bg-color: #DEDFE3; }
+.c2 { --bg-color: #ADABAC; }
+.c3 { --bg-color: #8A8A91; }
+.c4 { --bg-color: #E2E2E4; }
+.c5 { --bg-color: #6B6158; }
+.c6 { --bg-color: #594D4C; }
+.c7 { --bg-color: #A7A1A5; }
+.c8 { --bg-color: #6F6E73; }
+.c9 { --bg-color: #101116; }
+.c10 { --bg-color: #9E9E9E; }
+.c11 { --bg-color: #7E7C7D; }
+.c12 { --bg-color: #656668; }
+
+.contact_pothole {
+    margin: 5em 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact article {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact img {
+    width: 4em;
+    height: 4em;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+    padding-inline: clamp(1rem, 5vw, 3rem);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pages {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.95);
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .navbar.responsive .pages {
+        max-height: 300px;
+    }
+
+    .pages a {
+        display: block;
+        text-align: left;
+        padding: 1em 2em 1em;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .navbar .icon {
+        display: block;
+    }
+    .hamburger-btn {
+        display: flex;
+    }
+    .card img {
+        width: 90vw;
+        height: 40vh;
+    }
+    .footer-logo img {
+        display: none;
+    }
+    .card {
+        gap: 2em;
+    }
+}

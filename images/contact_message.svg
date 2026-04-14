@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_ò__1" data-name="ò‡_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="22.61 20.28 77.39 20.28 77.39 64.8 68.09 64.8 68.09 79.72 68.03 79.72 51.77 64.8 22.61 64.8 22.61 20.28"/>
+  <line class="cls-1" x1="65.66" y1="34.31" x2="34.34" y2="34.31"/>
+  <line class="cls-1" x1="65.66" y1="49.64" x2="34.34" y2="49.64"/>
+</svg>

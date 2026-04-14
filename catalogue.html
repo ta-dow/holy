@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gabrielle Michaud">
+        <meta name="description" content="DART 349-A Final Project">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Catalogue | Holy</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="logo">
+                    <a href="index.html">
+                        <img src="images/holy_logo.svg" alt="Holy written with a solid red o">
+                    </a>
+                </span>
+
+                <span class="pages" id="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="#" class="active">Catalogue</a>
+                    <a href="contact.html">Contact</a>
+                </span>
+
+                <button class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+            </nav>
+        </header>    
+        <main id="content">
+            <h1>A Moment to Remember</h1>
+            <h2>Choose the perfect type of pothole to match your aura.</h2>
+
+            <section class="gems">
+                <div class="gem-group">
+                    <div class="gem-card">
+                        <img src="images/gem_1.png" alt="Gem 1">
+                        <p class="gem-text">
+                            1.03 m Carat, Roundish Cut, Ice Grey
+                        </p>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle-filled c1"></div>
+                        <div class="circle-filled c2"></div>
+                        <div class="circle-filled c3"></div>
+                    </div>
+                </div>
+                <div class="gem-group">
+                    <div class="gem-card">
+                        <img src="images/gem_2.png" alt="Gem 2">
+                        <p class="gem-text">
+                            1.24 m Carat, Peninsula Cut, Slush White
+                        </p>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle-filled c4"></div>
+                        <div class="circle-filled c5"></div>
+                        <div class="circle-filled c6"></div>
+                    </div>
+                </div>
+                <div class="gem-group">
+                    <div class="gem-card">
+                        <img src="images/gem_3.png" alt="Gem 3">
+                        <p class="gem-text">
+                            0.57 m Carat, Never Ending Cut, Lava Black
+                        </p>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle-filled c7"></div>
+                        <div class="circle-filled c8"></div>
+                        <div class="circle-filled c9"></div>
+                    </div>
+                </div>
+                <div class="gem-group">
+                    <div class="gem-card">
+                        <img src="images/gem_4.png" alt="Gem 4">
+                        <p class="gem-text">
+                            0.26 m Carat, Twin Crevasse Cut, Silver
+                        </p>
+                    </div>
+                    <div class="circle-container">
+                        <div class="circle-filled c10"></div>
+                        <div class="circle-filled c11"></div>
+                        <div class="circle-filled c12"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <h3>Edge Clarity Scale *</h3>
+                <h4>Each formation represents a singular convergence of pressure, climate, and time. All potholes are therefore graded according to our standardized system measuring surface definition and fracture visibility.</h4>
+
+                <img src="images/pothole_grading.svg" alt="Illustrated circles with subtle overlap effect, each border becoming increasingly wiggly">
+                
+                <p>*  Flawless (FL)</p>
+                <p>&nbsp;&nbsp; Very, Very Slightly Included (VVS1 and VVS2)</p>
+                <p>&nbsp;&nbsp; Very Slightly Included (VS1 and VS2)</p>
+                <p>&nbsp;&nbsp; Slightly Included (SI1)</p>
+            </section>
+    
+            <section class="half-hero">
+                <img src="images/ice.jpg" alt="Background image of top-down view of sheets of ice">
+                <div class="overlay-box">
+                    <h2>Naturally Sourced</h2>
+                    <h4>Each specimen is responsibly documented at its site of origin. Seasonal exposure, municipal intervention, and traffic density contribute to unique formation characteristics.</h4>
+                </div>
+            </section>
+
+            <article>
+                <h3>Join the family</h3>
+                <p>
+                    Subscribe for exclusive access to newly documented formations, early notice of seasonal releases, and private viewing opportunities across the city. Membership ensures you remain closely connected to our evolving collection and the conditions that shape it. For partnership opportunities, please <a href="contact.html">contact us</a>.
+                </p>
+            </article>
+        
+        </main>
+
+        <hr>
+
+        <footer>
+            <section class="footer-text">
+                <p>
+                    Copyright &copy; 1832-2126 City of Montreal.
+                </p>
+                <p>
+                    All specimens remain publicly accessible. No scheduled restoration.
+                </p>
+            </section>
+            <section class="footer-logo">
+                <a href="index.html">
+                    <img src="images/holy_logo.svg" alt="Holy logo">
+                </a>
+            </section>
+        </footer>
+
+        <script>
+            const nav = document.querySelector(".navbar");
+            const btn = document.querySelector(".hamburger-btn");
+
+            btn.addEventListener("click", () => {
+                nav.classList.toggle("responsive");
+                btn.classList.toggle("open");
+            });
+        </script>
+
+    </body>
+</html>

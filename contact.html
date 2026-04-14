@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gabrielle Michaud">
+        <meta name="description" content="DART 349-A Final Project">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Contact | Holy</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <span class="logo">
+                    <a href="index.html">
+                        <img src="images/holy_logo.svg" alt="Holy written with a solid red o">
+                    </a>
+                </span>
+
+                <span class="pages" id="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a href="#" class="active">Contact</a>
+                </span>
+
+                <button class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+            </nav>
+        </header>    
+        <main id="content">
+            <article>
+                <h1>A Lifetime of Client Care</h1>
+                <h4>Each pothole formation in our collection is supported by ongoing documentation and seasonal monitoring.</h4>
+
+                <img src="images/pothole_6.jpg" class="contact_pothole" alt="Crumbling asphalt">
+            </article>
+
+            <h3>Contact Us</h3>
+            <h4>
+                Whether you are inquiring about a specific pothole, requesting structural certification details, or seeking guidance on selecting a formation suited to your daily commute, our team is prepared to assist.
+            </h4>
+
+            <section class="contact">
+                <article>
+                    <img src="images/contact_phone.svg" alt="Phone icon">
+                    <b>Call 514-872-0311</b>
+                </article>
+                <article>
+                    <img src="images/contact_message.svg" alt="Message icon">
+                    <a href="https://la-mairie.demandes.montreal.ca/en/envoyer-un-message/" target="_blank">
+                        <b>Send us a message</b>
+                    </a>
+                </article>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <section class="footer-text">
+                <p>
+                    Copyright &copy; 1832-2126 City of Montreal.
+                </p>
+                <p>
+                    All specimens remain publicly accessible. No scheduled restoration.
+                </p>
+            </section>
+            <section class="footer-logo">
+                <a href="index.html">
+                    <img src="images/holy_logo.svg" alt="Holy logo">
+                </a>
+            </section>
+        </footer>
+
+        <script>
+            const nav = document.querySelector(".navbar");
+            const btn = document.querySelector(".hamburger-btn");
+
+            btn.addEventListener("click", () => {
+                nav.classList.toggle("responsive");
+                btn.classList.toggle("open");
+            });
+        </script>
+
+    </body>
+</html>
