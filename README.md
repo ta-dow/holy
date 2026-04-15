@@ -1,10 +1,10 @@
-<b>Project Statement</b>
+## Project Statement
 
 This satirical website reframes Montreal’s deteriorating roadways through the visual and rhetorical language of luxury jewellery. Rather than proposing a technical solution to infrastructural decay, the project interrogates its normalization by transforming potholes into objects of desire. Drawing on the branding conventions of high-end jewellery retailers, the website presents potholes as rare, certified diamonds. Gemological criteria such as carat, cut, and colour are translated into diameter, shape, and prevalence.
 
 The project’s visual identity reinforces this tension. A deep monochromatic red evokes both luxury and blood, suggesting heritage while alluding to the extractive violence historically associated with the diamond trade and the real dangers of neglecting public infrastructure. It also references Montreal’s civic brand colour, a vivid red that anchors the project in a familiar visual identity.
 
-If you want to help, you can <a href="https://montreal.ca/en/how-to/report-pothole" target="_blank">report a pothole</a>. Website by Gabrielle Michaud.
+If you want to help, you can [report a pothole](https://montreal.ca/en/how-to/report-pothole). Website by Gabrielle Michaud.
 
 <br>
 
