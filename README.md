@@ -1,8 +1,10 @@
 <b>Project Statement</b>
 
-This satirical web project reframes Montreal’s deteriorating roadways through the visual and rhetorical language of luxury jewellery. Rather than proposing a technical solution to infrastructural decay, the project interrogates its normalization by transforming potholes into objects of desire. Drawing on the branding conventions of high-end retailers such as Tiffany & Co., the website presents potholes as rare, certified diamonds. Gemological criteria such as carat, cut, colour, and clarity are translated into diameter, fracture pattern, asphalt tone, and surface condition.
+This satirical website reframes Montreal’s deteriorating roadways through the visual and rhetorical language of luxury jewellery. Rather than proposing a technical solution to infrastructural decay, the project interrogates its normalization by transforming potholes into objects of desire. Drawing on the branding conventions of high-end jewellery retailers, the website presents potholes as rare, certified diamonds. Gemological criteria such as carat, cut, and colour are translated into diameter, shape, and prevalence.
 
-The project’s visual identity reinforces this tension. A deep monochromatic red evokes both luxury and unease, suggesting heritage while alluding to the extractive violence historically associated with the diamond trade. It also references Montreal’s own civic branding, grounding the satire in a familiar visual language. This duality mirrors the condition of Montreal’s streets themselves: surfaces that appear maintained through repeated patching, yet conceal deeper structural instability.
+The project’s visual identity reinforces this tension. A deep monochromatic red evokes both luxury and blood, suggesting heritage while alluding to the extractive violence historically associated with the diamond trade and the real dangers of neglecting public infrastructure. It also references Montreal’s civic brand colour, a vivid red that anchors the project in a familiar visual identity.
+
+If you want to help, you can <a href="https://montreal.ca/en/how-to/report-pothole" target="_blank">report a pothole</a>. Website by Gabrielle Michaud.
 
 <br>
 
@@ -13,8 +15,6 @@ The project’s visual identity reinforces this tension. A deep monochromatic re
 “Ensuring Conflict-Free Diamonds Worldwide.” Kimberley Process, kimberleyprocess.com.
 
 Luft, Amy. “Montreal Launches Emergency Plan to Tackle Surge in Potholes.” CTVNews, 6 Feb. 2026, ctvnews.ca/montreal/article/montreal-launches-emergency-plan-to-tackle-surge-in-potholes.
-
-“Report a Pothole.” Ville De Montréal, montreal.ca/en/how-to/report-pothole.
 
 Rouhana, Rachel. “Luxury Color Palettes for Wellness Brands.” Haute Stock Blog, 24 Jan. 2025, hautestock.co/luxury-color-palettes-for-wellness-brands.
 
